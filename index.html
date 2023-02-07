@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="imagens/icone instagram.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>  
+    <main>
+        <section id="imagem1">
+            <div id="imagem2"></div>
+        </section>
+
+        <div id="oficial">Acesse o site oficial:<a href="https://www.instagram.com/" id="linkoficial" target="_blank" rel="external">Instagram</a></div>
+        
+        <section id="conteudo">
+            <h1>Instagram</h1>
+            <p>
+                <input type="email" name="email" id="iemail" required placeholder="Email" maxlength="30" class="inputs">
+                <label for="iemail">Email</label>
+            </p>
+            <p>
+                <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8" maxlength="20" class="inputs">
+                <label for="isenha">Senha</label>
+            </p>
+            <p>
+                <input type="submit" value="Entrar" onclick="clicar()" id="submit">
+            </p>
+            <p id="erro">Email ou senha estão incorretos.</p>
+                       <hr>
+            <p>
+                <a href="#" class="links" id="facebook"> <img src="imagens/icone facebook.jpg" alt="facebook"> Entrar com o facebook</a>
+            </p>
+            <p>
+                <a href="#" class="links" id="linksenha"> Esqueceu a senha?</a>
+                       </p>
+                       <div id="cadastro">
+                        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                    </div>
+                 </section>
+                 
+    </main>
+    
+
+    <script>
+        function clicar () {
+            if (iemail.value != "luisfernandogmena@gmail.com" || isenha.value != "mena001m")
+            erro.style.display = 'block'
+            conteudo.style.display = 'none'
+            oficial.style.display = 'block'
+            imagem1.style.display = "none"
+        }
+    </script>
+</body>
+</html>

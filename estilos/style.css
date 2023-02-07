@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body,html {
+    height: 100vh;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+main {
+    width: 100vw;
+}
+
+
+section#conteudo {
+    width: 300px;
+    height: 410px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    outline: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50% , -60%);
+    display: block;
+}
+
+section#conteudo h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+section#conteudo label {
+    display: none;
+}
+
+ .inputs {
+    width: 250px;
+    padding: 12px;
+    margin: auto;
+    display: block;
+    margin-top: 8px;
+    background-color: #FAFAFA;
+    outline: none;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+}
+
+.inputs:focus-within {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    width: 275px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4DB5F9;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+p#erro {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: block;
+    text-align: center;
+}
+
+#facebook {
+    color: #385195;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+#linksenha {
+    color: black;
+    margin-top: 50px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#linksenha:hover {
+    text-decoration: underline black;
+}
+
+img {
+    width: 34px;
+    position: absolute;
+    right: 242px;
+}
+
+section#imagem1 {
+    background-image: url(../imagens/iphone2.png);
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    left: -160px;
+    display: none;
+}
+
+section#imagem1 > div#imagem2 {
+    background-image: url(../imagens/instagram.png);
+    height: 541px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 75px;
+    top: 15px;
+}
+
+div#oficial {
+    margin: auto;
+    display: block;
+    width: 250px;
+    -webkit-transform: translateY(250px);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    display: none;
+}
+
+div#cadastro {
+    width: 276px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 455px;
+    left: 0px;
+}
+
+div#cadastro > p {
+    text-align: center;
+    font-size: 15px;
+}
+
+div#cadastro > p > a {
+    text-decoration: none;
+    color: #2997F6;
+}
+
+div#cadastro > p > a:hover {
+    text-decoration: underline;
+}
+
+
+
